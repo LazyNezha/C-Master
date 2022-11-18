@@ -129,6 +129,30 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+add.o: add.c.o
+.PHONY : add.o
+
+# target to build an object file
+add.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/add.c.o
+.PHONY : add.c.o
+
+add.i: add.c.i
+.PHONY : add.i
+
+# target to preprocess a source file
+add.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/add.c.i
+.PHONY : add.c.i
+
+add.s: add.c.s
+.PHONY : add.s
+
+# target to generate assembly for a file
+add.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/add.c.s
+.PHONY : add.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... add.o"
+	@echo "... add.i"
+	@echo "... add.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

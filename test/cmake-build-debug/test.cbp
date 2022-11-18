@@ -76,6 +76,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/mnt/c/C-Master/test/add.c">
+			<Option target="test"/>
+		</Unit>
 		<Unit filename="/mnt/c/C-Master/test/main.c">
 			<Option target="test"/>
 		</Unit>

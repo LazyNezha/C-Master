@@ -1,1 +1,1 @@
-/usr/bin/clang -g CMakeFiles/test.dir/main.c.o -o test 
+/usr/bin/clang -g CMakeFiles/test.dir/main.c.o CMakeFiles/test.dir/add.c.o -o test 
